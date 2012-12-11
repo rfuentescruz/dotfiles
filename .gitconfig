@@ -1,0 +1,20 @@
+[user]
+	name = rfuentescruz
+        email = lando@gmail.com
+[color]
+         branch = auto
+         diff = auto
+         status = auto
+[color "branch"]
+         current = yellow reverse
+         local = yellow
+         remote = green
+[color "diff"]
+         meta = white
+         frag = magenta bold
+         old = red
+         new = green
+[color "status"]
+         added = green
+         changed = red
+         untracked = cyan
