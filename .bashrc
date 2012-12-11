@@ -109,5 +109,3 @@ fi
 if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile
 fi
-PATH="$PATH":~/phabricator/arcanist/bin/
-export PATH
