@@ -1,20 +1,35 @@
 [user]
-	name = rfuentescruz
+        name = rfuentescruz
         email = lando@gmail.com
 [color]
-         branch = auto
-         diff = auto
-         status = auto
+        branch = auto
+        diff = auto
+        status = auto
 [color "branch"]
-         current = yellow reverse
-         local = yellow
-         remote = green
+        current = yellow reverse
+        local = yellow
+        remote = green
 [color "diff"]
-         meta = white
-         frag = magenta bold
-         old = red
-         new = green
+        meta = white
+        frag = magenta bold
+        old = red
+        new = green
 [color "status"]
-         added = green
-         changed = red
-         untracked = cyan
+        added = green
+        changed = red
+        untracked = cyan
+[alias]
+        s = status
+        a = !git add . && git status
+        au = !git add -u . && git status
+        aa = !git add . && git add -u . && git status
+        c = commit
+        cm = commit -m
+        ca = commit --amend # careful
+        ac = !git add . && git commit
+        acm = !git add . && git commit -m
+        l = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+        ll = log --stat --abbrev-commit
+        d = diff --color-words
+        dh = diff --color-words head
+        master = checkout master
