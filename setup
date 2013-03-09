@@ -1,0 +1,9 @@
+#!/bin/sh
+rm ~/.vimrc
+rm ~/.bashrc
+rm ~/.bash_aliases
+rm ~/.gitconfig
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
