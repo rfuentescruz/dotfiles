@@ -43,6 +43,7 @@ set showmatch
 
 " GUI
 syntax enable
-set background=dark
+colorscheme molokai
+let &t_Co=256
 
 set foldmethod=marker
