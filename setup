@@ -1,10 +1,24 @@
 #!/bin/sh
-rm ~/.vimrc
-rm ~/.bashrc
-rm ~/.bash_aliases
-rm ~/.gitconfig
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.bashrc ~/.bashrc
-ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-cp -r ~/dotfiles/.vim/ ~/.vim
+
+if [ -e .setup-files1 ]; then
+    while read LINE
+        do
+            if [ -e ~/$LINE ]; then
+                rm ~/$LINE
+            fi
+            echo "Creating symlink for $LINE..."
+            ln -s ~/dotfiles/$LINE ~/$LINE
+    done < ".setup-files"
+fi
+
+if [ -e .setup-dirs ]; then
+    while read LINE
+        do
+            if [ ! -d ~/$LINE ]; then
+                mkdir -p ~/$LINE/
+            fi
+            echo "Copying $LINE..."
+            cp -r ~/dotfiles/$LINE/* ~/$LINE/
+    done < ".setup-dirs"
+fi
+
