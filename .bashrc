@@ -106,8 +106,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-if [ -f ~/.bash_profile ]; then
-    . ~/.bash_profile
+if [ -f ~/.bash_includes ]; then
+    . ~/.bash_includes
 fi
 
 #  Customize BASH PS1 prompt to show current GIT repository and branch.

@@ -47,3 +47,22 @@ colorscheme molokai
 let &t_Co=256
 
 set foldmethod=marker
+
+function! g:ToggleNuMode()
+    if(&nu == 1)
+        set nonu
+    else
+        set nu
+    endif
+endfunc
+
+function! g:TogglePasteMode()
+    if(&paste == 1)
+        set nopaste
+    else
+        set paste
+    endif
+endfunc
+
+nnoremap <C-L> :call g:ToggleNuMode()<cr>
+nnoremap <C-P> :call g:TogglePasteMode()<cr>
