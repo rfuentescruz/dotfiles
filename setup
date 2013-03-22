@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -e .setup-files1 ]; then
+if [ -e .setup-files ]; then
     while read LINE
         do
             if [ -e ~/$LINE ]; then
