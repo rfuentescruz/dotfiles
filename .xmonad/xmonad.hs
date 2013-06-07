@@ -39,4 +39,6 @@ main = do
         manageHook          = myManageHook <+> manageDocks,
         layoutHook          = avoidStruts $ layoutHook defaultConfig,
         handleEventHook     = docksEventHook <+> handleEventHook defaultConfig
-    }
+    }  `additionalKeys`
+        [ ((myModMask .|. controlMask, xK_l), spawn "xscreensaver-command -lock")
+        ]
