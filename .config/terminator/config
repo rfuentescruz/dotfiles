@@ -1,0 +1,4 @@
+font = Mono 10
+enable_real_transparency = True
+scrollbar_position = disabled
+titlebars = False

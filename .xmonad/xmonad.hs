@@ -1,4 +1,5 @@
 import XMonad
+import XMonad.Config.Gnome
 import XMonad.ManageHook
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
@@ -22,13 +23,16 @@ myBorderWidth = 1
 myWorkspaces = ["1:code", "2:web", "3", "4", "5:media"] ++ map show [6..9]
 
 myManageHook = composeAll [
+        className =? "sublime-text-2"   --> doShift "1:code",
         resource  =? "desktop_window"   --> doIgnore,
         resource  =? "kdesktop"         --> doIgnore
     ]
 
+myDefaultConfig = gnomeConfig
+
 main = do
     xmproc <- spawnPipe "~/.cabal/bin/xmobar ~/.xmonad/xmobar.hs"
-    xmonad $ defaultConfig {
+    xmonad $ myDefaultConfig {
         borderWidth         = myBorderWidth,
         normalBorderColor   = myNormalBorderColor,
         focusedBorderColor  = myFocusedBorderColor,
@@ -37,8 +41,9 @@ main = do
         workspaces          = myWorkspaces,
 
         manageHook          = myManageHook <+> manageDocks,
-        layoutHook          = avoidStruts $ layoutHook defaultConfig,
-        handleEventHook     = docksEventHook <+> handleEventHook defaultConfig
+        layoutHook          = avoidStruts $ layoutHook myDefaultConfig,
+        handleEventHook     = docksEventHook <+> handleEventHook myDefaultConfig
     }  `additionalKeys`
-        [ ((myModMask .|. controlMask, xK_l), spawn "xscreensaver-command -lock")
+        [ ((myModMask .|. controlMask, xK_l), spawn "xscreensaver-command -lock"),
+          ((myModMask, xK_p), spawn "dmenu_run")
         ]
