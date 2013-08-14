@@ -18,3 +18,6 @@
         d = diff --color-words
         dh = diff --color-words head
         master = checkout master
+[user]
+	name = Rolando Cruz
+	email = rolando.cruz21@gmail.com
