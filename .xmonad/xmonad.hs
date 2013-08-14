@@ -20,10 +20,11 @@ myNormalBorderColor = "#7c7c7c"
 myFocusedBorderColor = "#7fff00"
 myBorderWidth = 1
 
-myWorkspaces = ["1:code", "2:web", "3", "4", "5:media"] ++ map show [6..9]
+myWorkspaces = ["1:code", "2:web", "3", "4", "5", "6", "7", "8:files"] ++ map show [6..9]
 
 myManageHook = composeAll [
         className =? "sublime-text-2"   --> doShift "1:code",
+        className =? "Nautilus"         --> doShift "8:files",
         resource  =? "desktop_window"   --> doIgnore,
         resource  =? "kdesktop"         --> doIgnore
     ]
@@ -44,6 +45,8 @@ main = do
         layoutHook          = avoidStruts $ layoutHook myDefaultConfig,
         handleEventHook     = docksEventHook <+> handleEventHook myDefaultConfig
     }  `additionalKeys`
-        [ ((myModMask .|. controlMask, xK_l), spawn "xscreensaver-command -lock"),
+        [
+          ((myModMask .|. shiftMask, xK_q), spawn "gnome-session-quit"),
+          ((myModMask .|. shiftMask, xK_z), spawn "gnome-session-quit --no-prompt"),
           ((myModMask, xK_p), spawn "dmenu_run")
         ]
