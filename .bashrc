@@ -110,6 +110,8 @@ if [ -f ~/.bash_includes ]; then
     . ~/.bash_includes
 fi
 
+export EDITOR=vi
+
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
 #  by Mike Stewart - http://MediaDoneRight.com
 

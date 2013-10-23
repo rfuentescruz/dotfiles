@@ -1,4 +1,20 @@
-font = Mono 10
-enable_real_transparency = True
-scrollbar_position = disabled
-titlebars = False
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = Monospace 9
+    scrollbar_position = hidden
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    color_scheme = white_on_black
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
