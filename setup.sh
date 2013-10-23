@@ -51,3 +51,10 @@ if [ -d $HOME/.config/terminator ]; then
 fi
 
 ln -s $DIR/.config/terminator $HOME/.config/
+
+# sublime config
+mkdir -p $HOME/.config/sublime-text-2/Packages/User
+if [ -e $HOME/.config/sublime-text-2/Packages/User/Preferences.sublime-settings ]; then
+    rm $HOME/.config/sublime-text-2/Packages/User/Preferences.sublime-settings
+fi
+ln -s $DIR/.config/sublime-text-2/Packages/User/Preferences.sublime-settings $HOME/.config/sublime-text-2/Packages/User/
