@@ -1,14 +1,14 @@
 [global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
 [keybindings]
 [profiles]
   [[default]]
     use_system_font = False
-    font = Monospace 9
     scrollbar_position = hidden
     foreground_color = "#ffffff"
     show_titlebar = False
     color_scheme = white_on_black
-    copy_on_selection = True
+    font = Monospace 9
 [layouts]
   [[default]]
     [[[child1]]]
