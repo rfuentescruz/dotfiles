@@ -16,6 +16,11 @@ ln -s $DIR/.bash_aliases $HOME/
 touch $HOME/.bash_includes
 
 # vim configs
+if [ -e $HOME/.vimrc ]; then
+    rm $HOME/.vimrc
+fi
+ln -s $DIR/.vimrc $HOME/
+
 if [ -d $HOME/.vim ]; then
     rm -r $HOME/.vim
 fi
