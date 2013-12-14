@@ -8,7 +8,7 @@
     foreground_color = "#ffffff"
     show_titlebar = False
     color_scheme = white_on_black
-    font = Monospace 9
+    font = Monospace 8
 [layouts]
   [[default]]
     [[[child1]]]
