@@ -57,6 +57,11 @@ fi
 
 ln -s $DIR/.config/terminator $HOME/.config/
 
+if [ -d $HOME/.config/ranger ]; then
+    rm -r $HOME/.config/ranger
+fi
+ln -s $DIR/.config/ranger/options.py $HOME/.config/ranger/
+
 # sublime config
 mkdir -p $HOME/.config/sublime-text-2/Packages/User
 if [ -e $HOME/.config/sublime-text-2/Packages/User/Preferences.sublime-settings ]; then
