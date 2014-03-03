@@ -24,6 +24,7 @@ myWorkspaces = ["1:code", "2:web", "3", "4", "5", "6", "7", "8:files"] ++ map sh
 
 myManageHook = composeAll [
         className =? "sublime-text-2"   --> doShift "1:code",
+        className =? "update-manager"   --> doShift "7",
         className =? "Nautilus"         --> doShift "8:files",
         resource  =? "desktop_window"   --> doIgnore,
         resource  =? "kdesktop"         --> doIgnore
