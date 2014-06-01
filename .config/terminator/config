@@ -3,8 +3,9 @@
 [keybindings]
 [profiles]
   [[default]]
-    use_system_font = False
     scrollbar_position = hidden
+    use_system_font = False
+    background_image = None
     foreground_color = "#ffffff"
     show_titlebar = False
     color_scheme = white_on_black
