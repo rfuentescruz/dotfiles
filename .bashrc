@@ -205,6 +205,10 @@ NewLine="\n"
 Jobs="\j"
 
 
+if ! type -t __git_ps1; then
+    source ~/dotfiles/git-prompt.sh
+fi
+
 # This PS1 snippet was adopted from code for MAC/BSD I saw from: http://allancraig.net/index.php?option=com_content&view=article&id=108:ps1-export-command-for-git&catid=45:general&Itemid=96
 # I tweaked it to work on UBUNTU 11.04 & 11.10 plus made it mo' better
 
