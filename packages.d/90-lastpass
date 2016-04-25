@@ -1,0 +1,22 @@
+#!/bin/bash
+CWD=`pwd`
+
+mkdir -p /tmp/lastpass
+cd /tmp/lastpass
+
+wget https://lastpass.com/lplinux.tar.bz2
+echo '5a9bb6e274c8d5102400fa03a3cab776 lplinux.tar.bz2' > MD5SUMS
+md5sum -c MD5SUMS
+tar xjvf lplinux.tar.bz2
+cd lplinux && ./install_lastpass.sh
+cd /tmp/lastpass
+
+sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip
+git clone https://github.com/lastpass/lastpass-cli.git --depth 1
+sudo mkdir -p /opt/lastpass-cli
+sudo mv lastpass-cli /opt
+cd /opt/lastpass-cli
+sudo make
+sudo make install
+
+cd $CWD

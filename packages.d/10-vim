@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo apt-get install -y vim
+
+wget https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh
+sh ./install.sh
+rm install.sh
