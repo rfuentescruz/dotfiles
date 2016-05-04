@@ -44,3 +44,13 @@ set laststatus=2
 
 syntax enable
 colorscheme molokai
+
+command W w !sudo tee % > /dev/null
+
+set expandtab
+set smarttab
+set number
+
+set softtabstop=4
+set shiftwidth=4
+
