@@ -18,6 +18,7 @@
     color_scheme = white_on_black
     font = Roboto Mono Medium for Powerline Medium 10
     foreground_color = "#ffffff"
+    login_shell = True
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
