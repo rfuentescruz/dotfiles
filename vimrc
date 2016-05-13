@@ -36,7 +36,10 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
-set t_Co=256
+let &t_Co=256
+
+" terminator for some reason does not send the correct terminal
+" version response disabling this for now.
 set t_RV=
 
 let g:airline_powerline_fonts = 1
