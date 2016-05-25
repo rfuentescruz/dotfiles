@@ -43,6 +43,7 @@ let &t_Co=256
 set t_RV=
 
 let g:airline_powerline_fonts = 1
+let g:airline_section_c = expand('%:p')
 set laststatus=2
 
 syntax enable
