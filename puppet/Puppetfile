@@ -1,0 +1,8 @@
+forge 'https://forge.puppetlabs.com'
+
+mod 'acme-ohmyzsh', '0.1.2'
+mod 'unibet-vagrant', '0.2.1'
+mod 'puppetlabs-apt', '2.3.0'
+mod 'lando-pip', :path => './modules.local/pip'
+mod 'lando-i3', :path => './modules.local/i3'
+mod 'lando-docker', :path => './modules.local/docker'

@@ -1,0 +1,34 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    acme-ohmyzsh (0.1.2)
+      puppetlabs-stdlib (>= 0)
+    puppetlabs-apt (2.3.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
+    puppetlabs-stdlib (4.15.0)
+    unibet-vagrant (0.2.1)
+      puppetlabs-stdlib (>= 0)
+
+PATH
+  remote: ./modules.local/docker
+  specs:
+    lando-docker (0.0.1)
+
+PATH
+  remote: ./modules.local/i3
+  specs:
+    lando-i3 (0.0.1)
+
+PATH
+  remote: ./modules.local/pip
+  specs:
+    lando-pip (0.0.1)
+
+DEPENDENCIES
+  acme-ohmyzsh (= 0.1.2)
+  lando-docker (>= 0)
+  lando-i3 (>= 0)
+  lando-pip (>= 0)
+  puppetlabs-apt (= 2.3.0)
+  unibet-vagrant (= 0.2.1)
+
