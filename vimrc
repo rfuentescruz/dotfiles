@@ -37,6 +37,7 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
 set t_Co=256
+set t_RV=
 
 let g:airline_powerline_fonts = 1
 set laststatus=2
