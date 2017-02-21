@@ -1,0 +1,29 @@
+[core]
+    editor = vim
+    autocrlf = input
+
+[alias]
+    ca = commit --amend
+    co = checkout
+
+[color]
+    branch = auto
+    diff = auto
+    grep = auto
+
+[log]
+    date = local
+
+[merge]
+    tool = meld
+
+[push]
+    default = simple
+
+[stash]
+    showPatch = true
+
+[user]
+    name = Rolando Cruz
+    email = rolando.cruz21@gmail.com
+
