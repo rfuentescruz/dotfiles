@@ -1,0 +1,8 @@
+#!/bin/bash
+
+import -window root -quality 20 -monitor /tmp/screenshot.png
+
+convert /tmp/screenshot.png -blur 0x6 /tmp/screenshot.png
+
+i3lock -i /tmp/screenshot.png -e
+
