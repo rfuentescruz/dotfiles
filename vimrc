@@ -59,3 +59,6 @@ set number
 set softtabstop=4
 set shiftwidth=4
 
+let g:ctrlp_custom_ignore = {
+  \ 'dir': 'node_modules'
+  \ }
