@@ -5,6 +5,7 @@
 [alias]
     ca = commit --amend
     co = checkout
+    s  = status
 
 [color]
     branch = auto
