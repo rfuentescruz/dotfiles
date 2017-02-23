@@ -1,12 +1,10 @@
 #!/bin/bash
-CWD=`pwd`
-
 mkdir -p /tmp/chrome
-cd /tmp/chrome
+pushd /tmp/chrome
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-cd $CWD
+popd
 rm -rf /tmp/chrome 
 

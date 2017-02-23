@@ -1,7 +1,6 @@
 #!/bin/bash
 build="3126"
 arch=$(uname -m)
-echo $arch
 case $arch in
 'x86_64')
   version="${build}_amd64"
@@ -13,3 +12,4 @@ esac
 wget https://download.sublimetext.com/sublime-text_build-$version.deb
 sudo dpkg -i sublime-text_build-$version.deb
 rm sublime-text_build-$version.deb
+
