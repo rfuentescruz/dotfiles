@@ -1,0 +1,25 @@
+{
+    "rulers": [80],
+    "indent_guide_options": ["draw_normal", "draw_active"],
+
+    "translate_tabs_to_spaces": true,
+    "trim_automatic_white_space": true,
+    "trim_trailing_white_space_on_save": true,
+    "default_line_ending": "unix",
+
+    "drag_text": false,
+
+    "highlight_modified_tabs": true,
+
+    "show_encoding": true,
+    "show_line_endings": true,
+
+    "folder_exclude_patterns": [
+    	".svn",
+    	".git",
+    	".hg",
+    	"CVS",
+    	"__pycache__",
+    	"node_modules"
+   	]
+}
