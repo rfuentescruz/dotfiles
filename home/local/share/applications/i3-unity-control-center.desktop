@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=0.1
+Name=Unity Control Center (i3)
+Comment=The Unity Control Center for i3wm
+Exec=$HOME/.local/bin/i3-unity-control-center
+Terminal=false
+Type=Application
+Categories=Utility;Application;
