@@ -77,8 +77,6 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -116,6 +114,8 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+bindsym $mod+w focus output left
+bindsym $mod+e focus output right
 bindsym $mod+Shift+w move container to output left
 bindsym $mod+Shift+e move container to output right
 
@@ -125,6 +125,7 @@ bindsym $mod+Shift+minus move scratchpad
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
 
 set $sysmenu "  [<b>r</b>]estart i3 - [<b>l</b>]ogout - po[<b>w</b>]eroff - reboo[<b>t</b>]"
 bindsym $mod+Shift+q mode $sysmenu
