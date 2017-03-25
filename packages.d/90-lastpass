@@ -11,7 +11,7 @@ tar xjvf lplinux.tar.bz2
 cd lplinux && ./install_lastpass.sh
 cd /tmp/lastpass
 
-sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip
+sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip cmake
 git clone https://github.com/lastpass/lastpass-cli.git --depth 1
 sudo mkdir -p /opt/lastpass-cli
 sudo mv lastpass-cli /opt
