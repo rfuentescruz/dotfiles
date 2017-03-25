@@ -52,12 +52,16 @@ colorscheme molokai
 
 command W w !sudo tee % > /dev/null
 
-set expandtab
-set smarttab
-set number
+" This blindly sets tabstop to 8. Disable it
+let g:python_recommended_style=0
 
-set softtabstop=4
+set autoindent
+set tabstop=4
+set expandtab
 set shiftwidth=4
+set softtabstop=4
+
+set number
 
 let g:ctrlp_custom_ignore = {
   \ 'dir': 'node_modules'
