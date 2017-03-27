@@ -37,6 +37,8 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+set showcmd
+
 let &t_Co=256
 
 " terminator for some reason does not send the correct terminal
