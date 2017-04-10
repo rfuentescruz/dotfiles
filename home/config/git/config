@@ -1,6 +1,7 @@
 [core]
     editor = vim
     autocrlf = input
+    excludesFile = ~/.config/git/ignore
 
 [alias]
     ca = commit --amend
