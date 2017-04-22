@@ -1,0 +1,8 @@
+#!/usr/bin/zsh
+
+source "${NVM_HOME-$NVM_DIR}/nvm.sh"
+
+# nodejs v6
+nvm install 6
+
+npm install --global yarn

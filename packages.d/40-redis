@@ -1,0 +1,13 @@
+#!/bin/bash
+
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+taskset -c 0 make test
+sudo mkdir -p /opt
+sudo mv redis-stable /opt/redis-stable
+pushd /opt/redis-stable
+sudo make install
+popd
+rm redis-stable.tar.gz
