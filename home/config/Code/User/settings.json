@@ -1,0 +1,22 @@
+{
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [
+        80
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/bower_components": true,
+        "**/node_modules": true,
+        "**/vendor": true,
+        "**/.tox": true,
+        "**/.cache": true
+    },
+    "files.insertFinalNewline": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "python.linting.pylintEnabled": false,
+    "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
+    "window.zoomLevel": 0
+}
