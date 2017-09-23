@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [[ ! -d /opt/rbenv ]]; then
+    sudo mkdir -p /opt/rbenv
+    sudo git clone https://github.com/rbenv/rbenv.git /opt/rbenv
+fi
+
+export PATH="/opt/rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+if [[ ! -d "$(rbenv root)"/plugins/ruby-build ]]; then
+    sudo mkdir -p "$(rbenv root)"/plugins
+    sudo git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+fi
+
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+
