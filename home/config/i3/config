@@ -130,7 +130,7 @@ bindsym $mod+Shift+r restart
 set $sysmenu "  [<b>r</b>]estart i3 - [<b>l</b>]ogout - po[<b>w</b>]eroff - reboo[<b>t</b>]"
 bindsym $mod+Shift+q mode $sysmenu
 
-mode --pango_markup $sysmenu {
+mode $sysmenu {
     bindsym r restart
     bindsym l exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
     bindsym w exec "systemctl poweroff"
