@@ -18,5 +18,10 @@
     "java.errors.incompleteClasspath.severity": "ignore",
     "python.linting.pylintEnabled": false,
     "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Monokai"
 }
