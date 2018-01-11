@@ -88,4 +88,3 @@ export DEFAULT_USER=lando
 export PROJECT_HOME=~/projects
 
 export PATH="/opt/rbenv/bin:$PATH" # Add rbenv to PATH
-eval "$(rbenv init -)"
