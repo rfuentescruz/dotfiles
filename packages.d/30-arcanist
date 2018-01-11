@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir -p $HOME/.arcanist
+
+pushd $HOME/.arcanist
+
+git clone http://github.com/phacility/libphutil.git
+git clone http://github.com/phacility/arcanist.git
+
+popd
