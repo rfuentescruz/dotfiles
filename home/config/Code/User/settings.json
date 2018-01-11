@@ -1,27 +1,38 @@
 {
-    "editor.renderWhitespace": "boundary",
+    "editor.cursorBlinking": "blink",    
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "all",
     "editor.rulers": [
         80
     ],
+    "editor.snippetSuggestions": "top",
+    "editor.stablePeek": true,
+    "extensions.ignoreRecommendations": false,    
     "files.exclude": {
+        "**/*.egg-info": true,
+        "**/*.pyc": true,
         "**/.git": true,
-        "**/.svn": true,
         "**/.hg": true,
+        "**/.svn": true,
+        "**/.tox": true,
         "**/.DS_Store": true,
         "**/bower_components": true,
         "**/node_modules": true,
-        "**/vendor": true,
-        "**/.tox": true,
-        "**/.cache": true
+        "**/vendor": true
     },
+    "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "java.errors.incompleteClasspath.severity": "ignore",
+    "files.trimFinalNewlines": true,
+    "python.venvPath": "~/.virtualenvs/",
     "python.linting.pylintEnabled": false,
+    "search.useIgnoreFiles": true,
+    "sublimeTextKeymap.promptV3Features": true,    
     "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
+    "vsicons.projectDetection.autoReload": true,
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "vscode-icons",
     "window.zoomLevel": 0,
-    "sublimeTextKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
-    "workbench.colorTheme": "Monokai"
+    "window.title": "${dirty}${activeEditorShort}${separator}${activeEditorMedium}${separator}${appName}",
+    "workbench.startupEditor": "newUntitledFile"
 }
