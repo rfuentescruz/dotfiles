@@ -1,0 +1,22 @@
+#!/bin/zsh
+
+sudo apt install imagemagick libxcb1-dev
+
+wget https://github.com/glindste/xwobf/archive/master.zip -O /tmp/xwobf.zip
+
+sudo unzip /tmp/xwobf.zip -d /tmp/xwobf
+
+pushd /tmp/xwobf
+
+sudo rm -rf /opt/xwobf && sudo mv -f /tmp/xwobf/xwobf-master /opt/xwobf
+
+pushd /opt/xwobf
+
+sudo make
+
+if [[ ! -L /usr/local/bin/xwobf ]]; then
+    sudo ln -s /opt/xwobf/xwobf /usr/local/bin/xwobf
+fi
+
+popd
+popd
