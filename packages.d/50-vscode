@@ -1,19 +1,23 @@
 #!/bin/bash
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
-sudo apt-get update
-sudo apt-get install code
+if ! dpkg-query --show code > /dev/null; then
+  curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+  sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+  sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
+  sudo apt-get update
+  sudo apt-get install code
+fi
 
 declare -a extensions=(
-  James-Yu.latex-workshop
-  PeterJausovec.vscode-docker
   ajshort.latex-preview
   alefragnani.project-manager
   bitzl.vscode-puppet
   cduruk.thrift
+  eamodio.gitlens
+  ecmel.vscode-html-css
   felixfbecker.php-intellisense
+  James-Yu.latex-workshop
   johnpapa.Angular2
   kdarkhan.mips
   lextudio.restructuredtext
@@ -22,13 +26,12 @@ declare -a extensions=(
   ms-vscode.cpptools
   ms-vscode.sublime-keybindings
   nonylene.dark-molokai-theme
+  PeterJausovec.vscode-docker
   robertohuertasm.vscode-icons
   secanis.jenkinsfile-support
   vivainio.robotframework
-  waderyan.gitblame
 )
 
 for ext in ${extensions[@]}; do
     code --install-extension $ext
 done
-
