@@ -2,15 +2,30 @@
     editor = vim
     autocrlf = input
     excludesFile = ~/.config/git/ignore
+    pager = /usr/local/bin/diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
     ca = commit --amend
     co = checkout
     s  = status
+    patch = !git --no-pager diff --no-color
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 
 [color]
     branch = auto
-    diff = auto
     grep = auto
 
 [log]
