@@ -12,6 +12,7 @@ fi
 declare -a extensions=(
   ajshort.latex-preview
   alefragnani.project-manager
+  bbenoist.vagrant
   bitzl.vscode-puppet
   cduruk.thrift
   eamodio.gitlens
