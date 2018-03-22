@@ -49,7 +49,7 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenvwrapper nvm nvm-prompt arcanist)
+plugins=(arcanist git virtualenvwrapper nvm nvm-prompt)
 
 # User configuration
 
@@ -88,9 +88,8 @@ export EDITOR=vim
 export DEFAULT_USER=lando
 export PROJECT_HOME=~/projects
 
-export PATH="/opt/rbenv/bin:$PATH" # Add rbenv to PATH
-
 # Composer
 export COMPOSER_HOME="$HOME/.composer"
 export COMPOSER_BIN_DIR="$COMPOSER_HOME/vendor/bin"
 export PATH="$PATH:$COMPOSER_BIN_DIR"
+
