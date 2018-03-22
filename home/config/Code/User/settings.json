@@ -34,5 +34,14 @@
     "workbench.iconTheme": "vscode-icons",
     "window.zoomLevel": 0,
     "window.title": "${dirty}${activeEditorShort}${separator}${activeEditorMedium}${separator}${appName}",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true
+    }
 }
