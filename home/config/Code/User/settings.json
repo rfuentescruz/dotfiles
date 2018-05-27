@@ -1,5 +1,5 @@
 {
-    "editor.cursorBlinking": "blink",    
+    "editor.cursorBlinking": "blink",
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "all",
@@ -8,7 +8,7 @@
     ],
     "editor.snippetSuggestions": "top",
     "editor.stablePeek": true,
-    "extensions.ignoreRecommendations": false,    
+    "extensions.ignoreRecommendations": false,
     "files.exclude": {
         "**/*.egg-info": true,
         "**/*.pyc": true,
@@ -27,7 +27,6 @@
     "python.venvPath": "~/.virtualenvs/",
     "python.linting.pylintEnabled": false,
     "search.useIgnoreFiles": true,
-    "sublimeTextKeymap.promptV3Features": true,    
     "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
     "vsicons.projectDetection.autoReload": true,
     "workbench.colorTheme": "Monokai",
@@ -42,6 +41,21 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": true
-    }
+        "suppressResultsExplorerNotice": true,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "editor.dragAndDrop": false,
+    "editor.trimAutoWhitespace": true,
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[twig]": {
+        "editor.tabSize": 2
+    },
+    "[puppet]": {
+        "editor.tabSize": 2,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true
+    },
+    "gitlens.historyExplorer.enabled": true
 }
