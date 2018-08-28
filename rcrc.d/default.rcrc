@@ -1,1 +1,1 @@
-DOTFILES_DIRS="/home/lando/.dotfiles/home"
+DOTFILES_DIRS="$HOME/.dotfiles/home"
