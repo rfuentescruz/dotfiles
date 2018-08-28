@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EDITOR=vim
-export DEFAULT_USER="$(stat -f '%Su' $0)"
+export DEFAULT_USER="$(stat -f '%Su' $BASH_SOURCE)"
 export PROJECT_HOME=~/projects
 
 # Composer
