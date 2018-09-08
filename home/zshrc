@@ -83,9 +83,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+stat_version=$(stat --version)
+current_zsh_script="${(%):-%N}"
+if echo $stat_version | grep -q 'coreutils'; then
+    export DEFAULT_USER="$(stat -c '%U' $current_zsh_script)"
+else
+    export DEFAULT_USER="$(stat -f '%Su' $current_zsh_script)"
+fi
 
 export EDITOR=vim
-export DEFAULT_USER="$(stat -f '%Su' $BASH_SOURCE)"
 export PROJECT_HOME=~/projects
 
 # Composer
