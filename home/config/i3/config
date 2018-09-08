@@ -187,4 +187,3 @@ bindsym Control+F6 exec xbacklight -inc 20 # increase screen brightness
 
 focus_follows_mouse no
 
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/this_aint_no_mac-wallpaper-1920x1080.jpg
