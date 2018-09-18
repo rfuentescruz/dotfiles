@@ -2,7 +2,7 @@
     editor = vim
     autocrlf = input
     excludesFile = ~/.config/git/ignore
-    pager = /usr/local/bin/diff-so-fancy | less --tabs=4 -RFX
+    pager = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
     ca = commit --amend
