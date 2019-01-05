@@ -168,6 +168,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+mode "pass-through" {
+  bindsym $mod+Escape mode "default"
+}
+
+bindsym $mod+Escape mode "pass-through"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
