@@ -99,3 +99,4 @@ export COMPOSER_HOME="$HOME/.composer"
 export COMPOSER_BIN_DIR="$COMPOSER_HOME/vendor/bin"
 export PATH="$PATH:$COMPOSER_BIN_DIR"
 
+alias prp='pipenv run python'
