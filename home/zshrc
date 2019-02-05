@@ -100,3 +100,8 @@ export COMPOSER_BIN_DIR="$COMPOSER_HOME/vendor/bin"
 export PATH="$PATH:$COMPOSER_BIN_DIR"
 
 alias prp='pipenv run python'
+
+eval $(thefuck --alias fck)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
