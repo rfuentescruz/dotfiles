@@ -193,3 +193,4 @@ bindsym Control+F6 exec xbacklight -inc 20 # increase screen brightness
 
 focus_follows_mouse no
 
+exec --no-startup-id numlockx on
