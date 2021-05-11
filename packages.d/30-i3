@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" | sudo tee /etc/apt/sources.list.d/i3.list
-sudo apt get update
-sudo apt install --allow-unauthenticated install sur5r-keyring
+sudo apt update
+sudo apt install --allow-unauthenticated sur5r-keyring
 sudo apt update
 sudo apt install i3
 gsettings set org.gnome.desktop.background show-desktop-icons false
